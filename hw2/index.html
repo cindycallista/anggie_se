@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CampusLine · HW2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="rail">
+    <a class="back" href="../">← Homework</a>
+    <div><span class="mark">CL</span><h1>CampusLine</h1><p>Student service queue</p></div>
+    <p class="student">洪英佩<br>111211147</p>
+  </aside>
+  <main>
+    <header><div><p class="date" id="today"></p><h2>Service hall</h2></div><div class="open"><span></span> Counters open until 17:00</div></header>
+    <section class="summary" aria-label="Queue summary">
+      <div><strong id="waitingCount">0</strong><span>waiting</span></div>
+      <div><strong id="servedCount">0</strong><span>served today</span></div>
+      <div><strong id="estimate">0 min</strong><span>estimated wait</span></div>
+    </section>
+    <section class="layout">
+      <div>
+        <div class="section-head"><h3>Current queue</h3><button id="serveBtn" class="secondary">Serve next</button></div>
+        <div id="queue" class="queue"></div>
+      </div>
+      <form id="ticketForm">
+        <h3>Take a number</h3>
+        <label>Name<input id="name" required maxlength="30" placeholder="Student name"></label>
+        <label>Service<select id="service"><option value="REG">Registration record</option><option value="SCH">Scholarship support</option><option value="DOC">Official document</option><option value="PAY">Payment question</option></select></label>
+        <label>Note<textarea id="note" maxlength="80" placeholder="Optional short note"></textarea></label>
+        <button type="submit">Create ticket</button>
+        <p class="hint">Tickets are stored only in this browser.</p>
+      </form>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
+

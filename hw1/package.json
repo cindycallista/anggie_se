@@ -1,0 +1,10 @@
+{
+  "name": "netprobe-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": { "netprobe": "./netprobe.mjs" },
+  "scripts": { "start": "node netprobe.mjs" },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}
+

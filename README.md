@@ -1,9 +1,16 @@
-# 課程：現代軟體工程 -- 學生作業與專案
+# Software Engineering Studio
 
-欄位 | 內容
------|--------
-學期 | 115 學年上學期
-教師 | [陳鍾誠](https://www.nqu.edu.tw/educsie/index.php?act=blog&code=list&ids=4)
-學校 | [金門大學資訊工程系](https://www.nqu.edu.tw/educsie/index.php)
-學生 | xxx
-學號 | xx
+Student: 洪英佩  
+Student ID: 111211147  
+Class: 資工四
+
+Website: https://anggie0707.github.io/_se/
+
+| Week | Project | Demo |
+| --- | --- | --- |
+| HW1 | NetProbe HTTP command-line client | [Open](https://anggie0707.github.io/_se/hw1/) |
+| HW2 | CampusLine service queue | [Open](https://anggie0707.github.io/_se/hw2/) |
+| HW3 | FreshFirst pantry manager | [Open](https://anggie0707.github.io/_se/hw3/) |
+| HW4 | BranchRoute Git workflow guide | [Open](https://anggie0707.github.io/_se/hw4/) |
+| HW5 | PromptBench experiment log | [Open](https://anggie0707.github.io/_se/hw5/) |
+| HW6 | ParcelDock Docker service | [Open](https://anggie0707.github.io/_se/hw6/) |

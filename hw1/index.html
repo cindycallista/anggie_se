@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NetProbe · HW1</title>
+  <style>
+    :root{--bg:#111310;--panel:#1b1e19;--line:#393d34;--text:#e8eadf;--muted:#a9ad9e;--lime:#b5d67a}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace}.shell{max-width:940px;margin:auto;padding:50px 24px}
+    nav{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:16px}a{color:var(--lime)}h1{font-size:clamp(38px,7vw,70px);letter-spacing:-.06em;margin:62px 0 12px}.lead{max-width:700px;color:var(--muted);font-size:17px}
+    .terminal{margin-top:42px;border:1px solid var(--line);background:var(--panel)}.bar{padding:10px 14px;border-bottom:1px solid var(--line);color:var(--muted)}.body{padding:24px;overflow:auto}.prompt{color:var(--lime)}code{white-space:pre}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px}.box{border-top:1px solid var(--line);padding-top:18px}.box h2{font-size:14px;color:var(--lime);text-transform:uppercase;letter-spacing:.12em}.box p{color:var(--muted)}
+    @media(max-width:650px){.grid{grid-template-columns:1fr}h1{margin-top:42px}}
+  </style>
+</head>
+<body><main class="shell">
+  <nav><a href="../">← all homework</a><span>HW1 / 洪英佩</span></nav>
+  <h1>NetProbe</h1>
+  <p class="lead">A dependency-free HTTP command-line client for inspecting APIs, following redirects, posting data, and saving responses.</p>
+  <section class="terminal"><div class="bar">terminal — node 18+</div><div class="body"><code><span class="prompt">$</span> node netprobe.mjs -i -L https://example.com
+HTTP 200 OK
+content-type: text/html
+
+&lt;!doctype html&gt;...</code></div></section>
+  <div class="grid">
+    <article class="box"><h2>Request controls</h2><p>Choose a method, repeat headers, attach a body, and set an abort timeout.</p></article>
+    <article class="box"><h2>Response controls</h2><p>Show metadata in the terminal or write the body directly to a file.</p></article>
+    <article class="box"><h2>Redirect policy</h2><p>Redirects remain visible by default. Add <code>-L</code> when automatic following is required.</p></article>
+    <article class="box"><h2>Source</h2><p><a href="https://github.com/anggie0707/_se/tree/main/hw1">Open the implementation on GitHub →</a></p></article>
+  </div>
+</main></body></html>

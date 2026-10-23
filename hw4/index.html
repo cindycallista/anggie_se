@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BranchRoute · HW4</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><a href="../">← Index</a><span>BranchRoute / HW4</span><span>洪英佩 111211147</span></header>
+  <main>
+    <section class="intro"><p>Small-team playbook</p><h1>One short branch.<br>One reviewed change.</h1><p class="lead">A lightweight GitHub Flow keeps the main branch safe without slowing down a small team.</p></section>
+    <section class="map" aria-label="Git branch flow">
+      <div class="main-line"><span>main</span><i></i><i></i><i></i><i></i></div>
+      <div class="branch-line"><span>feature/search</span><b></b><b></b><b></b></div>
+      <div class="labels"><span>start</span><span>commit</span><span>review</span><span>merge</span></div>
+    </section>
+    <section class="route">
+      <article><span class="step">01</span><div><h2>Start from a clean main</h2><p>Update the local repository before creating work.</p><pre><code>git switch main<br>git pull --ff-only<br>git switch -c feature/search</code></pre></div><button class="check" aria-label="Mark step complete">Done</button></article>
+      <article><span class="step">02</span><div><h2>Commit one useful unit</h2><p>Stage intentionally and describe the result, not the activity.</p><pre><code>git add src/search.js test/search.test.js<br>git commit -m "Add title search"</code></pre></div><button class="check" aria-label="Mark step complete">Done</button></article>
+      <article><span class="step">03</span><div><h2>Push and open a pull request</h2><p>Explain purpose, testing, and screenshots when the interface changes.</p><pre><code>git push -u origin feature/search<br>gh pr create --fill</code></pre></div><button class="check" aria-label="Mark step complete">Done</button></article>
+      <article><span class="step">04</span><div><h2>Review, merge, clean up</h2><p>Resolve feedback, use squash merge, then remove the old branch.</p><pre><code>gh pr merge --squash --delete-branch<br>git switch main<br>git pull --ff-only</code></pre></div><button class="check" aria-label="Mark step complete">Done</button></article>
+    </section>
+    <footer><strong id="progress">0 / 4 complete</strong><button id="reset">Reset checklist</button></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
+

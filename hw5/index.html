@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PromptBench · HW5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><a href="../">← Homework</a><strong>PROMPTBENCH / 05</strong><span>洪英佩 111211147</span></header>
+  <main>
+    <section class="heading"><div><p>OpenCode model evaluation</p><h1>Compare runs,<br>not impressions.</h1></div><p>Use the same prompt, record measurable outcomes, and keep the evidence for the next model decision.</p></section>
+    <form id="runForm">
+      <label class="wide">Test prompt<input id="prompt" required maxlength="120" value="Explain the bug and propose a minimal fix."></label>
+      <label>Model<input id="model" required maxlength="35" placeholder="Model name"></label>
+      <label>Latency (sec)<input id="latency" type="number" min="0" max="999" step="0.1" required value="5.0"></label>
+      <label>Correctness<select id="correctness"><option value="5">5 — complete</option><option value="4">4 — minor issue</option><option value="3">3 — acceptable</option><option value="2">2 — major issue</option><option value="1">1 — incorrect</option></select></label>
+      <label>Clarity<select id="clarity"><option value="5">5 — very clear</option><option value="4">4 — clear</option><option value="3">3 — usable</option><option value="2">2 — confusing</option><option value="1">1 — unclear</option></select></label>
+      <label class="wide">Observation<input id="notes" maxlength="100" placeholder="What worked or failed?"></label>
+      <button type="submit">Record run</button>
+    </form>
+    <section class="results">
+      <div class="results-head"><div><h2>Recorded runs</h2><p id="count"></p></div><button id="download" class="plain">Download CSV</button></div>
+      <div class="table-wrap"><table><thead><tr><th>Model / Prompt</th><th>Time</th><th>Accuracy</th><th>Clarity</th><th>Score</th><th></th></tr></thead><tbody id="rows"></tbody></table></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
+

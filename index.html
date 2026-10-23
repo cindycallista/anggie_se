@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>洪英佩 · Software Engineering</title>
+  <style>
+    :root{--ink:#24211d;--muted:#6d665d;--paper:#f4f0e8;--line:#cfc7ba;--accent:#a3482d;--soft:#e7dfd2}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Georgia,"Times New Roman",serif}
+    a{color:inherit}.wrap{max-width:960px;margin:auto;padding:64px 28px 80px}.masthead{display:grid;grid-template-columns:1fr auto;gap:32px;border-bottom:2px solid var(--ink);padding-bottom:28px}
+    h1{font-size:clamp(40px,7vw,78px);line-height:.95;letter-spacing:-.055em;margin:0}.identity{text-align:right;font-family:Arial,sans-serif;font-size:14px;line-height:1.7}
+    .intro{max-width:620px;margin:34px 0 52px;color:var(--muted);font-size:19px}.week{display:grid;grid-template-columns:80px 1fr auto;gap:22px;align-items:baseline;border-top:1px solid var(--line);padding:24px 0;text-decoration:none}
+    .week:last-child{border-bottom:1px solid var(--line)}.number{font-family:Arial,sans-serif;font-size:13px;color:var(--accent);font-weight:700;letter-spacing:.12em}.week h2{margin:0;font-size:27px;font-weight:500}.week p{margin:5px 0 0;color:var(--muted);font-size:15px}.arrow{font:22px Arial,sans-serif;transition:transform .18s}.week:hover .arrow{transform:translateX(7px)}
+    footer{display:flex;justify-content:space-between;gap:20px;margin-top:52px;color:var(--muted);font:13px Arial,sans-serif}
+    @media(max-width:650px){.masthead{grid-template-columns:1fr}.identity{text-align:left}.week{grid-template-columns:54px 1fr}.arrow{display:none}.wrap{padding-top:38px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="masthead">
+      <h1>Software<br>Engineering</h1>
+      <div class="identity">洪英佩<br>111211147<br>資工四</div>
+    </header>
+    <p class="intro">Six small systems exploring command-line tools, interface design, teamwork, model evaluation, and container deployment.</p>
+    <section aria-label="Homework list">
+      <a class="week" href="hw1/"><span class="number">01</span><div><h2>NetProbe</h2><p>A compact HTTP client built with Node.js.</p></div><span class="arrow">→</span></a>
+      <a class="week" href="hw2/"><span class="number">02</span><div><h2>CampusLine</h2><p>A service queue for student affairs.</p></div><span class="arrow">→</span></a>
+      <a class="week" href="hw3/"><span class="number">03</span><div><h2>FreshFirst</h2><p>A pantry list ordered by expiry date.</p></div><span class="arrow">→</span></a>
+      <a class="week" href="hw4/"><span class="number">04</span><div><h2>BranchRoute</h2><p>A field guide for a small-team Git workflow.</p></div><span class="arrow">→</span></a>
+      <a class="week" href="hw5/"><span class="number">05</span><div><h2>PromptBench</h2><p>A repeatable worksheet for comparing models.</p></div><span class="arrow">→</span></a>
+      <a class="week" href="hw6/"><span class="number">06</span><div><h2>ParcelDock</h2><p>A container-ready parcel tracking service.</p></div><span class="arrow">→</span></a>
+    </section>
+    <footer><span>Modern Software Engineering · 2026</span><a href="https://github.com/anggie0707/_se">View source</a></footer>
+  </main>
+</body>
+</html>

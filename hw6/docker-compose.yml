@@ -1,0 +1,40 @@
+services:
+  web:
+    image: nginx:1.27-alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./index.html:/usr/share/nginx/html/index.html:ro
+      - ./styles.css:/usr/share/nginx/html/styles.css:ro
+      - ./app.js:/usr/share/nginx/html/app.js:ro
+    depends_on:
+      - api
+
+  api:
+    build: .
+    environment:
+      DATABASE_URL: postgres://parceldock:parceldock@db:5432/parceldock
+      PORT: 3000
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: parceldock
+      POSTGRES_PASSWORD: parceldock
+      POSTGRES_DB: parceldock
+    volumes:
+      - parcel_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U parceldock"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  parcel_data:
+

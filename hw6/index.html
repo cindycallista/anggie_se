@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ParcelDock · HW6</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><a href="../">← HW index</a><div class="brand"><span>PD</span><strong>ParcelDock</strong></div><p>洪英佩 · 111211147</p></header>
+  <main>
+    <section class="top"><div><p class="label">Dormitory receiving desk</p><h1>Packages, placed<br>where they belong.</h1></div><div class="system"><span id="modeDot"></span><div><strong id="mode">Checking service</strong><p id="clock"></p></div></div></section>
+    <section class="counts"><div><span id="waitingCount">0</span><p>awaiting pickup</p></div><div><span id="collectedCount">0</span><p>collected</p></div><div><span id="shelfCount">0</span><p>shelves in use</p></div></section>
+    <section class="work">
+      <div class="manifest">
+        <div class="manifest-head"><div><h2>Receiving manifest</h2><p>Newest parcels appear first.</p></div><input id="search" type="search" placeholder="Search recipient or code"></div>
+        <div id="parcels"></div>
+      </div>
+      <form id="parcelForm">
+        <h2>Log arrival</h2>
+        <label>Recipient<input id="recipient" required maxlength="80" placeholder="Full name"></label>
+        <label>Carrier<select id="carrier"><option>Post Office</option><option>Black Cat</option><option>HCT</option><option>7-Eleven</option><option>Other</option></select></label>
+        <label>Tracking code<input id="tracking" required maxlength="80" placeholder="PKG-000001"></label>
+        <label>Shelf<input id="shelf" required maxlength="20" placeholder="A-01"></label>
+        <button type="submit">Receive parcel</button>
+        <p id="formMessage" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
+
