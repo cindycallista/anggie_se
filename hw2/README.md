@@ -1,7 +1,7 @@
-# HW2 — CampusLine
+# Week 2 / CampusLine
 
-CampusLine is a browser-based service queue for a university student affairs office. Students can choose a counter, create a ticket, and watch the waiting list move.
+[Use CampusLine in the browser](https://anggie0707.github.io/_se/hw2/)
 
-Live demo: https://anggie0707.github.io/_se/hw2/
+CampusLine models a small student-service counter. A visitor chooses a service, receives a ticket, and joins the queue. The operator can call the next ticket while the page updates the waiting estimate.
 
-The demo uses localStorage, so it works directly on GitHub Pages without a server.
+The exercise focuses on form validation, DOM updates, simple queue rules, and browser persistence. Records stay in local storage, so no server setup is needed for grading.

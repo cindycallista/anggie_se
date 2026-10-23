@@ -1,7 +1,7 @@
-# HW5 — PromptBench
+# Week 5 / PromptBench
 
-PromptBench is a repeatable model comparison worksheet. It records a prompt, model name, response time, correctness, clarity, and notes, then calculates a weighted score.
+[Record a comparison run](https://anggie0707.github.io/_se/hw5/)
 
-Live demo: https://anggie0707.github.io/_se/hw5/
+PromptBench replaces vague model impressions with a small experiment log. The same prompt can be tested against several models while latency, correctness, clarity, and observations are recorded together.
 
-The purpose is to compare OpenCode model choices with the same task and criteria instead of relying on one impression.
+The score is only a study aid; the saved rows and exported CSV are the useful evidence. All entries remain in the current browser.

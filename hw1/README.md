@@ -1,28 +1,15 @@
-# HW1 — NetProbe
+# Week 1 / NetProbe
 
-NetProbe is a small curl-like command-line program written with the Node.js standard library. It supports redirects, request headers, JSON bodies, response headers, timeouts, and file output.
+[Open the review page](https://anggie0707.github.io/_se/hw1/)
 
-Demo and documentation: https://anggie0707.github.io/_se/hw1/
+I built NetProbe to understand what a curl-style client does before and after an HTTP request. It uses only the Node.js standard library and keeps redirects visible unless they are explicitly followed.
 
-## Run
+## Try it
 
 ```bash
 node netprobe.mjs https://httpbin.org/get
-node netprobe.mjs -X POST -H "Content-Type: application/json" -d '{"message":"hello"}' https://httpbin.org/post
-node netprobe.mjs -i -L --timeout 5000 https://example.com
+node netprobe.mjs -i -L https://example.com
+node netprobe.mjs -X POST -H "Content-Type: application/json" -d '{"status":"ready"}' https://httpbin.org/post
 ```
 
-## Options
-
-```text
--X, --request METHOD
--H, --header "Key: Value"
--d, --data BODY
--i, --include
--L, --location
--o, --output FILE
-    --timeout MS
--h, --help
-```
-
-Requires Node.js 18 or newer. No packages are required.
+Available controls include method selection, repeated headers, a request body, response headers, redirect following, timeouts, and file output. Node.js 18 or newer is required.

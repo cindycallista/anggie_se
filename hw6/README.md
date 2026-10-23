@@ -1,29 +1,15 @@
-# HW6 — ParcelDock
+# Week 6 / ParcelDock
 
-ParcelDock is a container-ready parcel receiving service for a dormitory front desk. It records incoming parcels, tracks shelf locations, and marks collections.
+[Review the browser version](https://anggie0707.github.io/_se/hw6/)
 
-Live interface: https://anggie0707.github.io/_se/hw6/
+ParcelDock records packages received at a dormitory desk. Each entry keeps a recipient, carrier, tracking code, shelf position, and pickup state.
 
-## Stack
+## Two review modes
 
-- Nginx serves the interface and proxies `/api`
-- Node.js and Express provide the REST API
-- PostgreSQL stores parcel records
-- Docker Compose starts the complete system
-
-## Run
+The GitHub Pages version uses browser storage so the interface can be checked immediately. The container version connects the same workflow to a Node.js API and PostgreSQL through Nginx.
 
 ```bash
 docker compose up --build
 ```
 
-Open http://localhost:8080. GitHub Pages uses a local browser data fallback, so the interface remains easy to review without Docker.
-
-## API
-
-```text
-GET    /api/health
-GET    /api/parcels
-POST   /api/parcels
-PATCH  /api/parcels/:id/pickup
-```
+After startup, open `http://localhost:8080`. The API provides health, list, create, and pickup endpoints under `/api`.

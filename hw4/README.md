@@ -1,13 +1,15 @@
-# HW4 — BranchRoute
+# Week 4 / BranchRoute
 
-BranchRoute is a practical GitHub Flow field guide for a small software team. It covers branch creation, focused commits, pull requests, review, merge, and cleanup.
+[Walk through the checklist](https://anggie0707.github.io/_se/hw4/)
 
-Live guide: https://anggie0707.github.io/_se/hw4/
+BranchRoute is my compact working agreement for a small repository. It favors one short branch, one focused change, and one review before the work returns to `main`.
 
-## Working agreement
+## Rules used here
 
-- `main` must remain deployable.
-- Branch names use `feature/`, `fix/`, or `docs/`.
-- Pull requests explain the change and its verification.
-- At least one teammate reviews before merge.
-- Delete merged branches to keep the repository clear.
+- Update `main` before starting.
+- Prefix branches with `feature/`, `fix/`, or `docs/`.
+- Keep each commit about one result.
+- Include verification notes in the pull request.
+- Remove a branch after it has been merged.
+
+The page stores checklist progress locally, making it useful as a repeatable practice sheet.
