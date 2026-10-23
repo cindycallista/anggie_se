@@ -1,0 +1,19 @@
+{
+  "name": "studyslot",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/unit/*.test.mjs",
+    "test:api": "node --test tests/system/*.test.mjs",
+    "test:e2e": "playwright test",
+    "test:all": "npm run test && npm run test:api && npm run test:e2e",
+    "check": "node --check domain.mjs && node --check server.mjs && node --check app.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}
