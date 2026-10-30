@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Settle Sheet calculates fair group expense balances and final transfers.">
+  <title>Settle Sheet — Group Expense Calculator</title>
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+  <header class="masthead">
+    <a href="../">SE / Week 8</a>
+    <div>
+      <strong>Settle Sheet</strong>
+      <span>洪英佩 · 111211147</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Split a group bill without guessing.</h1>
+      <p>Record who paid and who joined each expense. The final section shows the smallest set of transfers needed to settle the group.</p>
+    </section>
+
+    <section class="people-section" aria-labelledby="people-title">
+      <div class="section-title">
+        <h2 id="people-title">1. Group members</h2>
+        <p id="member-count"></p>
+      </div>
+      <form id="member-form" class="member-form">
+        <label for="member-name">Name</label>
+        <input id="member-name" name="name" maxlength="24" placeholder="Add a person" required>
+        <button type="submit">Add member</button>
+      </form>
+      <div id="member-list" class="member-list"></div>
+    </section>
+
+    <section class="expense-section" aria-labelledby="expense-title">
+      <div class="section-title">
+        <h2 id="expense-title">2. New expense</h2>
+        <p>Choose only the people who shared this cost.</p>
+      </div>
+      <form id="expense-form" class="expense-form">
+        <label>
+          Paid by
+          <select id="payer" name="payer" required></select>
+        </label>
+        <label>
+          Amount
+          <input id="amount" name="amount" type="number" min="0.01" step="0.01" placeholder="0.00" required>
+        </label>
+        <label class="description-field">
+          Description
+          <input id="description" name="description" maxlength="50" placeholder="Dinner, taxi, tickets…" required>
+        </label>
+        <fieldset>
+          <legend>Split between</legend>
+          <div id="split-options" class="split-options"></div>
+        </fieldset>
+        <button class="record-button" type="submit">Record expense</button>
+      </form>
+    </section>
+
+    <section class="ledger-section" aria-labelledby="ledger-title">
+      <div class="section-title ledger-heading">
+        <div>
+          <h2 id="ledger-title">3. Expense ledger</h2>
+          <p id="ledger-total"></p>
+        </div>
+        <button id="clear-expenses" class="plain-button" type="button">Clear ledger</button>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Description</th><th>Payer</th><th>Shared by</th><th class="money">Amount</th><th></th></tr></thead>
+          <tbody id="expense-rows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="settlement-section" aria-labelledby="settlement-title">
+      <div class="section-title">
+        <h2 id="settlement-title">4. Final settlement</h2>
+        <p>Positive balances receive money; negative balances pay.</p>
+      </div>
+      <div class="settlement-grid">
+        <div>
+          <h3>Balance check</h3>
+          <div id="balance-list" class="balance-list"></div>
+        </div>
+        <div>
+          <h3>Transfers to make</h3>
+          <ol id="transfer-list" class="transfer-list"></ol>
+        </div>
+      </div>
+      <div class="settlement-actions">
+        <button id="download-summary" type="button">Download summary</button>
+        <button id="load-example" class="plain-button" type="button">Restore example</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>Data stays in this browser. Currency is shown in NT$.</footer>
+  <script src="ledger.js"></script>
+</body>
+</html>

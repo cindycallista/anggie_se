@@ -2,7 +2,7 @@
 
 111211147 · 資工四
 
-This repository is a seven-week build log. Each folder has its own small project, short notes, and a browser page for quick review.
+This repository is an eight-week build log. Each folder has its own small project, short notes, and a browser page for quick review.
 
 ## Weekly work
 
@@ -13,5 +13,6 @@ This repository is a seven-week build log. Each folder has its own small project
 - [Week 5 — PromptBench](https://anggie0707.github.io/_se/hw5/): record comparable model test runs.
 - [Week 6 — ParcelDock](https://anggie0707.github.io/_se/hw6/): track dormitory parcels with a container-ready service.
 - [Week 7 — StudySlot](https://anggie0707.github.io/_se/hw7/): test a study-room booking service at unit, API, and browser level.
+- [Week 8 — Settle Sheet](https://anggie0707.github.io/_se/hw8/): calculate fair group balances and the transfers needed to settle them.
 
 Start from the [project index](https://anggie0707.github.io/_se/) or open a week directly.
