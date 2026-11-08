@@ -17,3 +17,5 @@ This repository is a nine-week build log. Each folder has its own small project,
 - [Week 9 — Laundry Queue](https://cindycallista.github.io/anggie_se/hw9/): prevent overlapping dorm laundry reservations.
 
 Start from the [project index](https://cindycallista.github.io/anggie_se/) or open a week directly.
+
+<img width="903" height="645" alt="image" src="https://github.com/user-attachments/assets/8e9840a8-ad85-43da-9d3b-629afb5afa6b" />
