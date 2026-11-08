@@ -2,7 +2,7 @@
 
 洪英佩 — 111211147
 
-[Open the live project](https://anggie0707.github.io/_se/hw8/)
+[Open the live project](https://cindycallista.github.io/anggie_se/hw8/)
 
 Settle Sheet solves a common group problem: one person pays for dinner, another pays for transport, and not every expense includes everyone. The page calculates each member's exact balance and turns it into a short transfer list.
 

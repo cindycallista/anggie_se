@@ -1,6 +1,6 @@
 # Week 1 / NetProbe
 
-[Open the review page](https://anggie0707.github.io/_se/hw1/)
+[Open the review page](https://cindycallista.github.io/anggie_se/hw1/)
 
 I built NetProbe to understand what a curl-style client does before and after an HTTP request. It uses only the Node.js standard library and keeps redirects visible unless they are explicitly followed.
 

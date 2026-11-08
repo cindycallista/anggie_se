@@ -1,6 +1,6 @@
 # Week 4 / BranchRoute
 
-[Walk through the checklist](https://anggie0707.github.io/_se/hw4/)
+[Walk through the checklist](https://cindycallista.github.io/anggie_se/hw4/)
 
 BranchRoute is my compact working agreement for a small repository. It favors one short branch, one focused change, and one review before the work returns to `main`.
 

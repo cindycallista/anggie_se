@@ -1,6 +1,6 @@
 # Week 7 / StudySlot
 
-[Open the live demo](https://anggie0707.github.io/_se/hw7/)
+[Open the live demo](https://cindycallista.github.io/anggie_se/hw7/)
 
 StudySlot is a small study-room booking board. The browser page works on GitHub Pages, while the Node.js server exposes the same booking flow through a JSON API.
 

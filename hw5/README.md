@@ -1,6 +1,6 @@
 # Week 5 / PromptBench
 
-[Record a comparison run](https://anggie0707.github.io/_se/hw5/)
+[Record a comparison run](https://cindycallista.github.io/anggie_se/hw5/)
 
 PromptBench replaces vague model impressions with a small experiment log. The same prompt can be tested against several models while latency, correctness, clarity, and observations are recorded together.
 

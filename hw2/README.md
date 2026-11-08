@@ -1,6 +1,6 @@
 # Week 2 / CampusLine
 
-[Use CampusLine in the browser](https://anggie0707.github.io/_se/hw2/)
+[Use CampusLine in the browser](https://cindycallista.github.io/anggie_se/hw2/)
 
 CampusLine models a small student-service counter. A visitor chooses a service, receives a ticket, and joins the queue. The operator can call the next ticket while the page updates the waiting estimate.
 

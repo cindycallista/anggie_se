@@ -1,6 +1,6 @@
 # Week 6 / ParcelDock
 
-[Review the browser version](https://anggie0707.github.io/_se/hw6/)
+[Review the browser version](https://cindycallista.github.io/anggie_se/hw6/)
 
 ParcelDock records packages received at a dormitory desk. Each entry keeps a recipient, carrier, tracking code, shelf position, and pickup state.
 
